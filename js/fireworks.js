@@ -672,7 +672,7 @@ function initVars() {
   s = "https://cantelope.org/NYE/";
   for (i = 1; i <= 10; ++i) {
     sparkPic = new Image();
-    sparkPic.src = s + "spark" + i + ".png";
+    sparkPic.src = "https://tse2-mm.cn.bing.net/th/id/OIP-C.ZgSA_bz2eYd8OlEUNYyAjQHaE8?pid=ImgDet";
     sparkPics.push(sparkPic);
   }
   sparks = new Array();

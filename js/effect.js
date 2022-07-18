@@ -54,10 +54,11 @@ $('document').ready(function(){
 	$('#turn_on').click(function(){
 		// $(this).delay(3000);
 		//await sleep(3000);
-		const element = document.getElementById('canvas');
+		document.styleSheets[5].deleteRule(0);
+		const element = document.getElementById('mycanvas');
 		element.remove();
-		const e2 = document.getElementById('canvas2');
-		e2.remove();
+		// const e2 = document.getElementById('mycanvas');
+		// e2.remove();
 		 document.getElementById('music1').remove();
 		$('#bulb_yellow').addClass('bulb-glow-yellow');
 		$('#bulb_red').addClass('bulb-glow-red');
@@ -87,6 +88,9 @@ $('document').ready(function(){
 	});
 
 	$('#bannar_coming').click(function(){
+		const e = document.getElementById('bannar')
+		e.setAttribute('src','image/banner.png');
+		// document.getElementById('bannar').remove('hidden');
 		$('.bannar').addClass('bannar-come');
 		$(this).fadeOut('slow').delay(4500).promise().done(function(){
 			$('#balloons_flying').fadeIn('slow');

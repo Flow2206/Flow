@@ -25,11 +25,21 @@
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/loading.css">
 	<link href='css/Signika.css' rel='stylesheet' type='text/css'>
-	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" type="text/css" href="css/cake.css">
-	<!-- <link rel="stylesheet/less" href="cake.less">
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.js"></script> -->
 	<style type="text/css">
+    body{
+            margin: 0;
+            padding: 0;
+            background: url("./pic/moon.jpeg");
+                /*兼容浏览器版本*/
+                -webkit-background-size: cover;
+                -o-background-size: cover;                
+                background-size: cover;
+		        background-color: black;
+            background-repeat:no-repeat;
+            overflow: hidden;
+    /* background-size:100% 100%; */
+    }
 		/*自适应圆角投影*/
 		.round_shade_box {
 			width: 1px;
@@ -202,8 +212,7 @@
 	<div class="loading"></div>
 	<audio autoplay='autoplay'  controls="controls" preload id="music1" hidden>
 	</audio>
-	<canvas id="canvas" style="position:absolute;width:100%;height:100%;z-index:0"></canvas>
-	<canvas id="canvas2"  style="position:absolute;width:100%;height:100%;z-index:1" class="canvas"></canvas>
+	<canvas id="mycanvas"></canvas>
 	<audio class="song" controls loop>
 		<source src="hbd.mp3">
 		</source>
@@ -261,7 +270,8 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<img src="image/banner.png" class="bannar">
+				<!-- <img src="image/banner.png" class="bannar"> -->
+        <img src=""  class="bannar" id="bannar">
 			</div>
 		</div>
 		<div class="row cake-cover">
@@ -384,5 +394,14 @@
 <script src="js/content_zoom.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/effect.js"></script>
+<script src="js/fireworks.js"></script>
 
+<script>
+	console.log(222);
+	$(document).ready(function () {
+		$('#pho1 a').fancyZoom({ scaleImg: true, closeOnClick: true });
+		$('#pho2 a').fancyZoom({ scaleImg: true, closeOnClick: true });
+	});
+
+</script>
 </html>

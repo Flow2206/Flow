@@ -54,7 +54,7 @@ $('document').ready(function(){
 	$('#turn_on').click(function(){
 		// $(this).delay(3000);
 		//await sleep(3000);
-		document.styleSheets[5].deleteRule(0);
+		document.styleSheets[4].deleteRule(0);
 		const element = document.getElementById('mycanvas');
 		element.remove();
 		// const e2 = document.getElementById('mycanvas');

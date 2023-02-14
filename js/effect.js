@@ -2,6 +2,7 @@ $(window).load(function(){
 	$('.loading').fadeOut('fast');
 	$('.container').fadeIn('fast');
 });
+
 $('document').ready(function(){
 	var system ={};
 	var p = navigator;
